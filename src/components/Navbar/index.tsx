@@ -1,3 +1,4 @@
+import Button from 'components/Button'
 import * as S from './styles'
 
 const Navbar = () => (
@@ -6,7 +7,7 @@ const Navbar = () => (
     <S.Portfolio>Portfolio</S.Portfolio>
     <S.AboutUs>Sobre nós</S.AboutUs>
     <S.Contact>Contato</S.Contact>
-    <button>Entre</button>
+    <Button size="small">Entre</Button>
   </S.Wrapper>
 )
 

@@ -29,7 +29,7 @@ export const Description = styled.h3`
 
 export const ButtonBox = styled.div`
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 `
 
 export const Image = styled.div`

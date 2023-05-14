@@ -1,4 +1,6 @@
+import Button from 'components/Button'
 import * as S from './styles'
+import { PlusLg } from '@styled-icons/bootstrap'
 
 const Content = () => (
   <S.Wrapper>
@@ -7,8 +9,8 @@ const Content = () => (
       <S.Description>Accelerate your speed of inovation while<br/> ensuring data privacy, security and <br/> compliance. As easy with API.</S.Description>
 
       <S.ButtonBox>
-        <button>click here</button>
-        <button>veja o portfolio</button>
+        <Button>click here</Button>
+        <Button icon={<PlusLg />} backgroundColor='transparent' color='black'>veja o portfolio</Button>
       </S.ButtonBox>
     </S.Column>
 
