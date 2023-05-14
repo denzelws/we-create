@@ -8,8 +8,16 @@ export const Wrapper = styled.main`
   color: black;
 `
 
+export const NavBox = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  cursor: pointer;
+`
+
 export const Logo = styled.h2`
   font-size: 1.8rem;
+  cursor: pointer;
 `
 
 export const Portfolio = styled.h2``
