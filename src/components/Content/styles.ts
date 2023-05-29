@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Wrapper = styled.main`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 80vh;
+  height: max-content;
 `
 
 export const Column = styled.div`
@@ -18,6 +18,7 @@ export const Title = styled.h1`
   font-size: 9rem;
   font-weight: 400;
   text-align: center;
+  line-height: 8rem;
 `
 
 export const Description = styled.h3`
@@ -32,7 +33,12 @@ export const ButtonBox = styled.div`
   gap: 2rem;
 `
 
-export const Image = styled.div`
-  background: url(/img/illustration.png);
-  background-size: cover;
+export const ImageBox = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`
+
+export const Image = styled.img`
+  max-width: 100%;
 `
