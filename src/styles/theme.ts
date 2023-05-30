@@ -1,4 +1,7 @@
 export default {
+  grid: {
+    container: '100rem'
+  },
   font: {
     normal: 400,
     bold: 600,
