@@ -1,5 +1,6 @@
 import styled, { DefaultTheme, css } from 'styled-components'
 import { ButtonProps } from '.'
+import { lighten } from 'polished'
 
 export type WrapperProps = {
   hasIcon: boolean
@@ -24,10 +25,20 @@ const wrapperModifiers = {
   `,
   dark: (theme: DefaultTheme) => css`
     background: ${theme.colors.black};
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+      background: ${lighten(0.1, '#030517')};
+    }
   `,
   transparent: () => css`
     background: transparent;
     border: none;
+    transition: font-size 0.4s ease-in-out;
+
+    &:hover {
+      font-size: 2rem;
+    }
   `
 }
 
